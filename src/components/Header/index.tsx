@@ -11,6 +11,7 @@ import { useContext, useState } from 'react'
 import { PortfolioContext } from '@/contexts/shopList'
 
 export function Header() {
+  const { t } = useTranslation()
   const [englishLanguage, setEnglishLanguage] = useState(true)
   const { handleSetLanguage } = useContext(PortfolioContext)
   const { i18n } = useTranslation()
@@ -43,9 +44,9 @@ export function Header() {
         <HeaderItems>
           <List size={26} />
           <HeaderOptions>
-            <p className="active">HOME</p>
-            <p>PORTFOLIO</p>
-            <p>CONTACT ME</p>
+            <p className="active">{t('home')}</p>
+            <p>{t('portfolio')}</p>
+            <p>{t('contact_me')}</p>
           </HeaderOptions>
         </HeaderItems>
       </HeaderContent>

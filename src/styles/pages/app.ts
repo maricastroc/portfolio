@@ -4,8 +4,8 @@ export const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
-  minHeight: '100%',
+  justifyContent: 'space-between',
+  minHeight: '100vh',
 
   '@media (min-width: 1440px)': {
     alignItems: 'center',

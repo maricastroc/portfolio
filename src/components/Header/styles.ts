@@ -64,11 +64,12 @@ export const HeaderOptions = styled('div', {
   alignItems: 'center',
 
   p: {
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
     cursor: 'pointer',
     fontFamily: 'Space Mono, monospace',
     color: '$gray300',
     fontSize: '0.75rem',
-    fontWeight: 600,
 
     '&:hover': {
       color: '$cyan300',
