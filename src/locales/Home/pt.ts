@@ -13,5 +13,7 @@ export default {
   stack_definition:
     'Mova o mouse sobre os cards para obter a definição resumida de cada uma dessas ferramentas.',
   project_together: 'Que tal fazermos um projeto juntos?',
+  home: 'Home',
+  portfolio: 'Porfólio',
   contact_me: 'Fale comigo',
 }
