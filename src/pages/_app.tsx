@@ -1,0 +1,28 @@
+import type { AppProps } from 'next/app'
+import { globalStyles } from '../styles/global'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { Container } from '@/styles/pages/app'
+import { Header } from '@/components/Header'
+import { I18nextProvider } from 'react-i18next'
+import i18n from '../i18n'
+import PortfolioContextProvider from '@/contexts/shopList'
+import { ContactMeSection } from '@/components/ContactMeSection'
+
+library.add(fas)
+
+globalStyles()
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <PortfolioContextProvider>
+      <I18nextProvider i18n={i18n}>
+        <Container>
+          <Header />
+          <Component {...pageProps} />
+          <ContactMeSection />
+        </Container>
+      </I18nextProvider>
+    </PortfolioContextProvider>
+  )
+}

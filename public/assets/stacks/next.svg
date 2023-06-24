@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 132 40" style="enable-background:new 0 0 132 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#mask0_1027_53_00000145779480411727611310000006142108723497861265_);}
+	.st2{fill:#03DAC6;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="4" width="132.2" height="31.8">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0" y="4" width="132.2" height="31.8" id="mask0_1027_53_00000145779480411727611310000006142108723497861265_">
+	<path class="st0" d="M132,4H0v32h132V4z"/>
+</mask>
+<g class="st1">
+	<path class="st2" d="M132.2,4v5.1h-10.9v26.6h-5.4V9.1h-11.1V4H132.2z M25.5,35.7L5.4,10.8v24.9H0V4h6.8l25.4,31.5l0-26.4l0-5.1
+		h27.4v5.1h-22v8.1h17.7v5.1H37.6v8.4h22v5.1H25.5z M77,22.2l3.6,4.4l-7.3,9.1h-7.1L77,22.2z M73.3,4l9.2,11.4l9.2-11.4l7.1,0
+		L86.1,19.9l12.8,15.8h-7.1L66.2,4H73.3z"/>
+</g>
+</svg>
