@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   ProjectCardButton,
   ProjectCardContainer,
@@ -14,6 +15,7 @@ export interface ProjectCardProps {
 }
 
 export function ProjectCard({
+  id,
   title,
   description,
   imageUrl,
@@ -27,7 +29,9 @@ export function ProjectCard({
         <span></span>
         <h2>{title}</h2>
         <p>{description}</p>
-        <ProjectCardButton>VIEW PROJECT</ProjectCardButton>
+        <Link href={`portfolio/project/${id}`} key={id} prefetch={false}>
+          <ProjectCardButton>VIEW PROJECT</ProjectCardButton>
+        </Link>
         <span></span>
       </TextContent>
       <Separator />
