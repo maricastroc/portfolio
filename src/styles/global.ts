@@ -12,6 +12,10 @@ export const globalStyles = globalCss({
     },
   },
 
+  a: {
+    textDecoration: 'none',
+  },
+
   body: {
     backgroundColor: '$gray900',
     color: '$gray100',

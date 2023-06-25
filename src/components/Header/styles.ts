@@ -74,6 +74,11 @@ export const HeaderOptions = styled('div', {
     '&:hover': {
       color: '$cyan300',
     },
+
+    '& .active': {
+      color: '$cyan300',
+      cursor: 'default',
+    },
   },
 
   '& .active': {

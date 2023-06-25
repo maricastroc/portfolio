@@ -6,9 +6,11 @@ export const PortfolioContainer = styled('section', {
   padding: '2rem',
   gap: '5rem',
 
-  img: {
-    width: '100%',
-    backgroundColor: '$gray800',
-    borderRadius: '8px',
+  '@media (min-width: 768px)': {
+    padding: '2.5rem',
+  },
+
+  '@media (min-width: 980px)': {
+    gap: '7rem',
   },
 })

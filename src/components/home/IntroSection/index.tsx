@@ -8,7 +8,7 @@ import {
   TextContent,
 } from './styles'
 import { useContext, useEffect, useState } from 'react'
-import { PortfolioContext } from '@/contexts/shopList'
+import { PortfolioContext } from '@/contexts/portfolioContext'
 
 export function IntroSection() {
   const { t } = useTranslation()

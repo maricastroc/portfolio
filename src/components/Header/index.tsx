@@ -8,13 +8,18 @@ import {
 import { List } from 'phosphor-react'
 import { useTranslation } from 'react-i18next'
 import { useContext, useState } from 'react'
-import { PortfolioContext } from '@/contexts/shopList'
+import { PortfolioContext } from '@/contexts/portfolioContext'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export function Header() {
   const { t } = useTranslation()
   const [englishLanguage, setEnglishLanguage] = useState(true)
   const { handleSetLanguage } = useContext(PortfolioContext)
   const { i18n } = useTranslation()
+
+  const router = useRouter()
+  const { pathname } = router
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng)
@@ -44,9 +49,17 @@ export function Header() {
         <HeaderItems>
           <List size={26} />
           <HeaderOptions>
-            <p className="active">{t('home')}</p>
-            <p>{t('portfolio')}</p>
-            <p>{t('contact_me')}</p>
+            <Link href="/">
+              <p className={pathname === '/' ? 'active' : ''}>{t('home')}</p>
+            </Link>
+            <Link href="/portfolio">
+              <p className={pathname === '/portfolio' ? 'active' : ''}>
+                {t('portfolio')}
+              </p>
+            </Link>
+            <p className={pathname === '/contact' ? 'active' : ''}>
+              {t('contact_me')}
+            </p>
           </HeaderOptions>
         </HeaderItems>
       </HeaderContent>

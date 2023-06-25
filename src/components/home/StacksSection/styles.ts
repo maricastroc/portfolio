@@ -7,11 +7,12 @@ export const StacksSectionContainer = styled('section', {
   padding: '2rem',
   width: '100%',
 
-  '@media (min-width: 1024px)': {
+  '@media (min-width: 1200px)': {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
     maxWidth: '70rem',
+    margin: '0 auto',
   },
 })
 
@@ -32,7 +33,7 @@ export const AboutStackContainer = styled('div', {
     color: '$gray300',
   },
 
-  '@media (min-width: 1024px)': {
+  '@media (min-width: 1200px)': {
     display: 'flex',
   },
 })
@@ -73,7 +74,7 @@ export const Heading = styled('div', {
     },
   },
 
-  '@media (min-width: 1024px)': {
+  '@media (min-width: 1200px)': {
     h2: {
       fontSize: '2.8rem',
     },
@@ -107,7 +108,8 @@ export const StacksIconsContainer = styled('div', {
     gap: '1.5rem',
   },
 
-  '@media (min-width: 1024px)': {
+  '@media (min-width: 1200px)': {
     marginTop: '2rem',
+    marginRight: 0,
   },
 })

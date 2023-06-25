@@ -11,7 +11,7 @@ import { Container } from '@/styles/pages/app'
 import { Header } from '@/components/Header'
 import { I18nextProvider } from 'react-i18next'
 import i18n from '../i18n'
-import PortfolioContextProvider from '@/contexts/shopList'
+import PortfolioContextProvider from '@/contexts/portfolioContext'
 import { ContactMeSection } from '@/components/ContactMeSection'
 import { Footer } from '@/components/Footer'
 

@@ -11,7 +11,7 @@ import {
 import { StackCard } from '../StackCard'
 import { stacksPT, stacksEN } from '@/utils/stacksDefinition'
 import { useContext, useState } from 'react'
-import { PortfolioContext } from '@/contexts/shopList'
+import { PortfolioContext } from '@/contexts/portfolioContext'
 
 const stacks = [
   'html',
