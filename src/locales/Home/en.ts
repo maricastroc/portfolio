@@ -17,4 +17,10 @@ export default {
   portfolio: 'Porfolio',
   contact_me: 'Contact Me',
   contact: 'Contact Me',
+  previous_project: 'Previous Project',
+  next_project: 'Next Project',
+  project_background: 'Project Background',
+  visit_website: 'Visit Website',
+  build_with: 'Build with',
+  static_previews: 'Static Previews',
 }

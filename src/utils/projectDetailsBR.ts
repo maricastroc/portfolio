@@ -14,7 +14,7 @@ export const projectsDetailsBR = [
     summary:
       'Este projeto é uma aplicação de marketplace integrada com a API do Stripe para registro e checkout de produtos. Ele oferece uma experiência simulada ao usuário, desde a navegação no catálogo até a conclusão do processo de checkout, incluindo o redirecionamento dinâmico para uma página de sucesso. Recursos adicionais foram desenvolvidos, como uma API personalizada para fornecer detalhes de checkout ao Stripe.',
     details:
-      'In my first Next.js project, I utilized FileSystem Routing for generating new routes and employed the Stitches style library for server-side rendering and pre-bundling. I learned how to handle getServerSideProps and getStaticProps functions and created a custom API to interact with Stripe for checkout. Additionally, I implemented an interactive carousel using the keen-slider library to showcase catalog products.',
+      'No meu primeiro projeto Next.js, utilizei o FileSystem Routing para gerar novas rotas e empreguei a biblioteca de estilos Stitches para renderização do lado do servidor e pré-bundling. Aprendi como lidar com as funções getServerSideProps e getStaticProps e criei uma API personalizada para interagir com o Stripe no processo de checkout. Além disso, implementei um carrossel interativo utilizando a biblioteca keen-slider para exibir os produtos do catálogo.',
     tools: [
       'React.js',
       'TypeScript',
@@ -45,9 +45,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'React.Js'],
     summary:
-      'Here I developed an application that features a page with posts and dynamic comment sections. The app offers responsive design, hover states for interactive elements, the ability to create new posts, manage comments and replies with CRUD operations, and the option to upvote and downvote comments.',
+      'Aqui, desenvolvi uma aplicação que oferece uma página com postagens e seções de comentários dinâmicas. O aplicativo oferece recursos como a criação de novas postagens, gerenciamento completo de comentários e respostas por meio de operações de criação, leitura, atualização e exclusão (CRUD), além da opção de votar positivamente ou negativamente nos comentários.',
     details:
-      'In this project, I gained practical experience with ReactJS and utilized various concepts such as states, contexts, lists, immutability, properties, components, and keys. I leveraged the radix-ui library to work with React Primitive, specifically for the dialog component, which improved flexibility, reusability, and accessibility. Additionally, I prioritized componentization and employed TypeScript for better project organization and bug prevention.',
+      'Neste projeto, adquiri experiência prática com o ReactJS e utilizei vários conceitos, como estados, contextos, listas, imutabilidade, propriedades, componentes e chaves. Aproveitei a biblioteca radix-ui para trabalhar com o React Primitive, especificamente para o componente de modal, o que melhorou a flexibilidade, reutilização e acessibilidade. Além disso, priorizei a componentização e utilizei TypeScript para melhorar a organização do projeto e prevenir erros.',
     tools: [
       'React.js',
       'TypeScript',
@@ -73,9 +73,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'React.Js'],
     summary:
-      "I created a 3-page website that displays a GitHub user's repositories, offering detailed information for each one. The application features a user profile section with relevant data fetched from the GitHub API, a repository list with filtering functionality, and comprehensive repository details such as creation date, language distribution, homepage link, and README content display.",
+      'O projeto consiste em um website que exibe os repositórios de um usuário do GitHub, oferecendo informações detalhadas para cada um. A aplicação possui uma seção de perfil do usuário com dados relevantes obtidos da API do GitHub, uma lista de repositórios com funcionalidade de filtragem e detalhes abrangentes dos repositórios, como data de criação, distribuição de linguagens, link da página inicial e exibição do conteúdo do README.',
     details:
-      'During this project, I focused on enhancing my understanding of passing parameters through application routes. I successfully utilized the axios library to handle API requests and gained valuable experience in implementing search filters. Additionally, I leveraged the power of react-markdown and react-syntax-highlighter libraries to convert GitHub readme files into HTML format and beautifully highlight code syntax within text blocks.',
+      'Durante este projeto, concentrei-me em aprimorar minha compreensão de como passar parâmetros por meio das rotas da aplicação. Utilizei com sucesso a biblioteca axios para lidar com as requisições à API e adquiri uma experiência valiosa na implementação de filtros de pesquisa. Além disso, aproveitei o poder das bibliotecas react-markdown e react-syntax-highlighter para converter os arquivos README do GitHub para o formato HTML e destacar a sintaxe do código dentro dos blocos de texto',
     tools: [
       'React.js',
       'TypeScript',
@@ -102,9 +102,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['JavaScript', 'React.js'],
     summary:
-      "This Art gallery slideshow project, developed using ReactJS, features a masonry layout and offers a slideshow presentation with a lightbox view. Users can enjoy an optimal layout based on their device's screen size and experience interactive hover states. They can navigate through the slideshow to view each painting in a lightbox for a better viewing experience.",
+      'Este projeto de slideshow de galeria de arte, desenvolvido usando ReactJS, apresenta um layout em estilo masonry e oferece uma apresentação de slides com visualização em lightbox. Os usuários podem desfrutar de um layout responsivo e experimentar estados interativos ao passar o cursor sobre as imagens. Eles podem navegar pelo slideshow para visualizar cada pintura em um lightbox, proporcionando uma experiência de visualização aprimorada.',
     details:
-      'This project involved working with ReactJS and implementing key concepts like states, immutability, properties, components, context, and keys. Design features such as masonry layout, slideshow presentation, and lightbox view were incorporated, prioritizing responsive design using a Mobile First approach. Additionally, React Router DOM was utilized to pass parameters between routes, allowing for a gallery on the Home page with separate routes displaying specific painting details.',
+      'Este projeto envolveu o trabalho com ReactJS e a implementação de conceitos-chave como estados, imutabilidade, propriedades, componentes, contexto e chaves. Recursos de design, como layout em estilo masonry, apresentação de slides e visualização em lightbox, foram incorporados, priorizando o design responsivo com a abordagem Mobile First. Além disso, o React Router DOM foi utilizado para passar parâmetros entre as rotas, permitindo a criação de uma galeria na página inicial com rotas separadas para exibir detalhes específicos de cada pintura.',
     tools: [
       'React.js',
       'JavaScript',
@@ -128,9 +128,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'React.js'],
     summary:
-      "In this project, I created an informative 8-page website about the planets in our solar system. Users can enjoy an optimal layout based on their device's screen size and experience interactive hover states. Each planet has its own dedicated page with tabs to toggle between Overview, Internal Structure, and Surface Geology for detailed information.",
+      'Neste projeto, criei um website informativo com 8 páginas sobre os planetas do nosso sistema solar. Os usuários podem desfrutar de um layout responsivo e experimentar estados interativos ao passar o cursor sobre os elementos. Cada planeta possui sua própria página dedicada com abas para alternar entre Visão Geral, Estrutura Interna e Geologia da Superfície, para informações detalhadas.',
     details:
-      'With this application, I gained hands-on experience building a carousel using the useEmblaCarousel hook. Additionally, I practiced various ReactJS features including styled-components, contexts, reducers, and routing with React Router DOM. Working with TypeScript improved the organization of project files and helped prevent bugs.',
+      'Com esta aplicação, adquiri experiência prática na construção de um carrossel utilizando o hook useEmblaCarousel. Além disso, pratiquei várias funcionalidades do ReactJS, incluindo styled-components, contexts, reducers e roteamento com o React Router DOM. O uso do TypeScript melhorou a organização dos arquivos do projeto e ajudou a prevenir erros.',
     tools: [
       'React.js',
       'TypeScript',
@@ -156,9 +156,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'React.js'],
     summary:
-      'Overall, the project aimed to provide a user-friendly interface for managing the shopping cart of a fictional coffee shop, allowing customers to easily select and track their desired items, as well as providing a convenient way to calculate the total value of their purchase.',
+      'Esse projeto fornece uma interface amigável para gerenciar o carrinho de compras de uma cafeteria fictícia, permitindo que os clientes selecionem e acompanhem facilmente os itens desejados, além de fornecer uma maneira conveniente de calcular o valor total de sua compra.',
     details:
-      "In this project, I gained hands-on experience with styled-components, contexts, reducers, immer, routing using React Router DOM, React Hook Form, and form validation using zod with hookform/resolvers. I also utilized hooks like useDebounce and useMemo. Additionally, I created a custom useLocation hook using the Geolocation API to retrieve the user's location.",
+      'Neste projeto, adquiri experiência prática com styled-components, contexts, reducers, immer, roteamento usando React Router DOM, React Hook Form e validação de formulários usando zod com hookform/resolvers. Também utilizei hooks como useDebounce e useMemo. Além disso, criei um hook personalizado useLocation usando a API de Geolocalização para obter a localização do usuário.',
     tools: [
       'React.js',
       'TypeScript',
@@ -186,9 +186,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'React.js'],
     summary:
-      "This application allows you to search and list GitHub users by their name. The search results are presented as clickable cards, offering the option to either visit the user's GitHub page directly or navigate to a separate route that provides more comprehensive information about the selected user.",
+      'Esta aplicação permite buscar e listar usuários do GitHub pelo nome. Os resultados da busca são apresentados como cartões clicáveis, oferecendo a opção de visitar diretamente a página do usuário no GitHub ou navegar para uma rota separada que fornece informações mais abrangentes sobre o usuário selecionado.',
     details:
-      'In this project, I had the opportunity to practice working with routes in React, mastering the skill of passing parameters between different routes within the application. I emphasized componentization and utilized TypeScript to enhance project organization and minimize bugs. It was an excellent exercise that contributed to my development skills.',
+      'Neste projeto, tive a oportunidade de praticar o trabalho com rotas no React, aprimorando a habilidade de passar parâmetros entre diferentes rotas dentro da aplicação. Priorizei a componentização e utilizei TypeScript para aprimorar a organização do projeto e minimizar erros.',
     tools: [
       'React.js',
       'TypeScript',
@@ -213,9 +213,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['JavaScript', 'React.js', 'SCSS'],
     summary:
-      "Coffee Rosters Landing Page is a 3-page website featuring an interactive subscription section. Users can enjoy an optimal layout based on their device's screen size, experience hover states for interactive elements, and create a coffee subscription by making selections. They can also view an order summary modal that reflects their choices.",
+      'Coffee Rosters é um website de 3 páginas que apresenta uma seção interativa de montagem do pedido. Os usuários podem desfrutar de um layout otimizado e responsivo, experimentar estados de hover para elementos interativos e criar seu pedido a partir de seleções de diferentes atributos. Eles também podem visualizar um modal de resumo do pedido que reflete as escolhas feitas.',
     details:
-      'In this first large-scale project, I faced challenges related to styling and responsiveness. By utilizing the SASS preprocessor, I improved code readability. Implementing a Mobile First approach was crucial in adapting the layout and functionalities to various devices, ensuring a seamless user experience. Despite the challenges, I prioritized clean and organized code throughout the development process.',
+      'Neste primeiro projeto em grande escala, enfrentei desafios relacionados ao estilo e à responsividade. Ao utilizar o pré-processador SASS, melhorei a legibilidade do código. A implementação da abordagem Mobile First foi crucial para adaptar o layout e as funcionalidades a diversos dispositivos, garantindo uma ótima experiência do usuário. Priorizei um código limpo e organizado durante todo o processo de desenvolvimento.',
     tools: [
       'HTML-Semantic-Markup',
       'JavaScript',
@@ -239,9 +239,9 @@ export const projectsDetailsBR = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'React.js'],
     summary:
-      'This is a ReactJS-based Dictionary Web App that utilizes the Dictionary API. It offers features such as word search, displaying API responses, form validation, audio playback, font and theme customization, responsive layout, and interactive element feedback.',
+      'Esta é uma aplicação web de dicionário baseada em ReactJS que utiliza a Dicionary API. Ela oferece recursos como busca de palavras, exibição das respostas da API, validação de formulário, reprodução de áudio, personalização de fontes e temas, layout responsivo e feedback interativo dos elementos.',
     details:
-      "In this project, I had the opportunity to exercise componentization with ReactJS to the fullest, making the application more readable and facilitating its maintenance. I also made use of styled-components, favoring adherence to best practices for controlling a component's behavior. The use of TypeScript was essential to control the typing of properties used for communication between components. This was one of the first projects in which the benefits of componentization became very clear to me, in order to clarify the hierarchy between the existing components in the project and to allow the fragmentation and reuse of functionalities.",
+      'Neste projeto, tive a oportunidade de exercitar a componentização com ReactJS ao máximo, tornando a aplicação mais legível e facilitando sua manutenção. Também utilizei styled-components, priorizando as melhores práticas para controlar o comportamento de um componente. O uso do TypeScript foi fundamental para controlar a tipagem das propriedades utilizadas para comunicação entre os componentes.',
     tools: [
       'React.js',
       'TypeScript',

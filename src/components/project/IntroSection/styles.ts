@@ -112,7 +112,7 @@ export const WebsiteButton = styled('button', {
   color: '$cyan300',
   fontFamily: 'Space Mono, monospace',
   textTransform: 'uppercase',
-  width: '11.1rem',
+  width: '11.5rem',
 
   '&:hover': {
     backgroundColor: '$cyan700',

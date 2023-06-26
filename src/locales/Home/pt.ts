@@ -17,4 +17,10 @@ export default {
   portfolio: 'Porfólio',
   contact_me: 'Fale comigo',
   contact: 'Contato',
+  previous_project: 'Projeto Anterior',
+  next_project: 'Projeto Seguinte',
+  project_background: 'Background do Projeto',
+  visit_website: 'Visitar Website',
+  build_with: 'Ferramentas usadas',
+  static_previews: 'Previews da Aplicação',
 }

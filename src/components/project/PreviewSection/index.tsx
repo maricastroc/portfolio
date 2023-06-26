@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { ImagesPreviewContainer, PreviewSectionContainer } from './styles'
 
 interface PreviewSectionProps {
@@ -9,9 +10,11 @@ export function PreviewSection({
   imageUrlSecond,
   imageUrlThird,
 }: PreviewSectionProps) {
+  const { t } = useTranslation()
+
   return (
     <PreviewSectionContainer>
-      <h2>Static Previews</h2>
+      <h2>{t('static_previews')}</h2>
       <span></span>
       <ImagesPreviewContainer>
         <img src={imageUrlSecond} alt="" />

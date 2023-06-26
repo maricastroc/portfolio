@@ -241,7 +241,7 @@ export const projectsDetails = [
     summary:
       'This is a ReactJS-based Dictionary Web App that utilizes the Dictionary API. It offers features such as word search, displaying API responses, form validation, audio playback, font and theme customization, responsive layout, and interactive element feedback.',
     details:
-      "In this project, I had the opportunity to exercise componentization with ReactJS to the fullest, making the application more readable and facilitating its maintenance. I also made use of styled-components, favoring adherence to best practices for controlling a component's behavior. The use of TypeScript was essential to control the typing of properties used for communication between components. This was one of the first projects in which the benefits of componentization became very clear to me, in order to clarify the hierarchy between the existing components in the project and to allow the fragmentation and reuse of functionalities.",
+      "In this project, I had the opportunity to exercise componentization with ReactJS to the fullest, making the application more readable and facilitating its maintenance. I also made use of styled-components, favoring adherence to best practices for controlling a component's behavior. The use of TypeScript was essential to control the typing of properties used for communication between components.",
     tools: [
       'React.js',
       'TypeScript',

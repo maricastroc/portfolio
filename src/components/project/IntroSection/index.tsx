@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import {
   DetailsSection,
   IntroSectionContainer,
@@ -22,6 +23,8 @@ export default function IntroSection({
   languages,
   preview,
 }: IntroSectionProps) {
+  const { t } = useTranslation()
+
   return (
     <IntroSectionContainer>
       <Separator />
@@ -34,7 +37,7 @@ export default function IntroSection({
           <p>{categories.join(' / ')}</p>
           <p>{languages.join(' / ')}</p>
           <WebsiteButton>
-            <a href={preview}>VISIT WEBSITE</a>
+            <a href={preview}>{t('visit_website')}</a>
           </WebsiteButton>
         </DetailsSection>
       </ProjectInfo>

@@ -21,8 +21,10 @@ import { DescriptionSection } from '@/components/project/DescriptionSection'
 import { PreviewSection } from '@/components/project/PreviewSection'
 import { useContext, useEffect, useState } from 'react'
 import { PortfolioContext } from '@/contexts/portfolioContext'
+import { useTranslation } from 'react-i18next'
 
 export default function ProjectDetails() {
+  const { t } = useTranslation()
   const router = useRouter()
   const [projectToShow, setProjectToShow] = useState<any>()
   const { language } = useContext(PortfolioContext)
@@ -76,7 +78,7 @@ export default function ProjectDetails() {
                   <>
                     <CaretLeft size={32} />
                     <ControlText>
-                      <p>Previous Project</p>
+                      <p>{t('previous_project')}</p>
                       <h2>{previousProjectName}</h2>
                     </ControlText>
                   </>
@@ -95,7 +97,7 @@ export default function ProjectDetails() {
                   <>
                     <CaretRight size={32} />
                     <ControlText>
-                      <p>Next Project</p>
+                      <p>{t('next_project')}</p>
                       <h2>{nextProjectName}</h2>
                     </ControlText>
                   </>
