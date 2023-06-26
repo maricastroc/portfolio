@@ -1,4 +1,4 @@
-export const projectsDetailsBR = [
+export const projectsDetailsPT = [
   {
     id: 0,
     title: 'Atomic Shop',

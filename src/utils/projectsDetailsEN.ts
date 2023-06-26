@@ -1,4 +1,4 @@
-export const projectsDetails = [
+export const projectsDetailsEN = [
   {
     id: 0,
     title: 'Atomic Shop',

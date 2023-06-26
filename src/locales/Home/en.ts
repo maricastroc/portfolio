@@ -23,4 +23,5 @@ export default {
   visit_website: 'Visit Website',
   build_with: 'Build with',
   static_previews: 'Static Previews',
+  view_project: 'View Project',
 }

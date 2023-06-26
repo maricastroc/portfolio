@@ -5,6 +5,7 @@ import {
   Separator,
   TextContent,
 } from './styles'
+import { useTranslation } from 'react-i18next'
 
 export interface ProjectCardProps {
   id: number
@@ -21,6 +22,8 @@ export function ProjectCard({
   imageUrl,
   position,
 }: ProjectCardProps) {
+  const { t } = useTranslation()
+
   return (
     <ProjectCardContainer className={position === 'left' ? 'left' : 'right'}>
       <img src={imageUrl} alt="" />
@@ -30,7 +33,7 @@ export function ProjectCard({
         <h2>{title}</h2>
         <p>{description}</p>
         <Link href={`portfolio/project/${id}`} key={id} prefetch={false}>
-          <ProjectCardButton>VIEW PROJECT</ProjectCardButton>
+          <ProjectCardButton>{t('view_project')}</ProjectCardButton>
         </Link>
         <span></span>
       </TextContent>

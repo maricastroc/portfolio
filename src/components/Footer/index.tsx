@@ -24,7 +24,7 @@ export function Footer() {
           <PagesContainer>
             <p>{t('home')}</p>
             <p>{t('portfolio')}</p>
-            <p>{t('contact_me')}</p>
+            <p>{t('contact')}</p>
           </PagesContainer>
         </TextContainer>
         <IconsContainer>

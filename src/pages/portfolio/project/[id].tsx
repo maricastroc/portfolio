@@ -12,8 +12,8 @@ import {
 } from '@/styles/pages/project'
 import { useRouter } from 'next/router'
 import { CaretLeft, CaretRight } from 'phosphor-react'
-import { projectsDetails } from '../../../utils/projectsDetails'
-import { projectsDetailsBR } from '../../../utils/projectDetailsBR'
+import { projectsDetailsEN } from '../../../utils/projectsDetailsEN'
+import { projectsDetailsPT } from '../../../utils/projectDetailsPT'
 import Link from 'next/link'
 import IntroSection from '@/components/project/IntroSection'
 import { ImageHeader } from '@/components/project/ImageHeader'
@@ -34,12 +34,12 @@ export default function ProjectDetails() {
 
   useEffect(() => {
     language === 'en'
-      ? setProjectToShow(projectsDetails[actualId])
-      : setProjectToShow(projectsDetailsBR[actualId])
+      ? setProjectToShow(projectsDetailsEN[actualId])
+      : setProjectToShow(projectsDetailsPT[actualId])
   }, [language, actualId])
 
-  const previousProjectName = projectsDetails[actualId - 1]?.title
-  const nextProjectName = projectsDetails[actualId + 1]?.title
+  const previousProjectName = projectsDetailsEN[actualId - 1]?.title
+  const nextProjectName = projectsDetailsEN[actualId + 1]?.title
 
   return (
     projectToShow && (

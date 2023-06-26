@@ -1,9 +1,9 @@
-export const projectsResume = [
+export const projectsResumePT = [
   {
     id: 0,
     title: 'Atomic Shop',
     description:
-      'Marketplace application build with Next.js and React.js,  that uses Stripe API for product registration and checkout purposes.',
+      'Aplicação de marketplace elaborada com Next.js e React.js, utilizando a API do Stripe para o registro de produtos e finalização de compras.',
     imageUrl: './assets/portfolio/atomic_shop.png',
     position: 'left',
   },
@@ -11,7 +11,7 @@ export const projectsResume = [
     id: 1,
     title: 'Interactive Comments Section',
     description:
-      'Application that simulates a page of posts and dynamic comment sections, with CRUD operations, build with React.js and Typescript.',
+      'Página de posts e seções de comentários dinâmicas, com operações CRUD, construída React.js e TypeScript.',
     imageUrl: './assets/portfolio/interactive_comments.png',
     position: 'right',
   },
@@ -19,7 +19,7 @@ export const projectsResume = [
     id: 2,
     title: 'Github Blog',
     description:
-      'A 2-page website that showcases all repositories of a GitHub user, providing detailed information about each repository.',
+      'Aplicação para exibição de  todos os repositórios de um usuário do GitHub, fornecendo informações detalhadas sobre cada repositório.',
     imageUrl: './assets/portfolio/github_blog.png',
     position: 'left',
   },
@@ -27,7 +27,7 @@ export const projectsResume = [
     id: 3,
     title: 'Art Galleria Slideshow',
     description:
-      'Project build with ReactJS with slideshow presentation, masonry layout and lightbox view.',
+      'Galeria de arte elaborada com React.js, apresentando slideshow, masonry layout e visualização em lightbox.',
     imageUrl: './assets/portfolio/art_galleria.png',
     position: 'right',
   },
@@ -35,7 +35,7 @@ export const projectsResume = [
     id: 4,
     title: 'Planets Fact Site',
     description:
-      'An 8-page fact site for all planets in our solar system, build with ReactJS.',
+      'Site de oito páginas que reúne curiosidades sobre os planetas do sistema solar, feito com React.js',
     imageUrl: './assets/portfolio/planets_fact.png',
     position: 'left',
   },
@@ -43,7 +43,7 @@ export const projectsResume = [
     id: 5,
     title: 'Coffee Delivery',
     description:
-      'Aplication build with React.js, with a shopping cart for a fictional coffee shop.',
+      'Aplicação construída com React.js que simula o e-commerce de uma cafeteria, com página de checkout de produtos.',
     imageUrl: './assets/portfolio/coffee_delivery.png',
     position: 'right',
   },
@@ -51,7 +51,7 @@ export const projectsResume = [
     id: 6,
     title: 'Devfinder',
     description:
-      'Project built with React JS, using GitHub API user, that lets you search for a Github user by their name.',
+      'Projeto construído com ReactJS, utilizando a GitHub API, que permite pesquisar por um usuário do GitHub pelo nome e exibir detalhes de seu perfil.',
     imageUrl: './assets/portfolio/search_github.png',
     position: 'left',
   },
@@ -59,7 +59,7 @@ export const projectsResume = [
     id: 7,
     title: 'Coffee Roasters',
     description:
-      '3-page site for a fictional coffee shop, build with Vanilla JavaScript, with an interactive subscription section.',
+      'Site de 3 páginas que simula o e-commerce de uma cafeteria, com seção dinâmica de customização do pedido do cliente, construída com React.js.',
     imageUrl: './assets/portfolio/coffee_roasters.png',
     position: 'right',
   },
@@ -67,7 +67,7 @@ export const projectsResume = [
     id: 8,
     title: 'Dictionary',
     description:
-      'A Dictionary App built with React.js, using the Dictionary API and including colour themes and font selection.',
+      'Dicionário construído com React.js, utilizando a Dictionary API e incluindo temas de cores e seleção de fonte.',
     imageUrl: './assets/portfolio/dictionary_web.png',
     position: 'left',
   },
