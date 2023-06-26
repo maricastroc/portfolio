@@ -135,6 +135,10 @@ export const DetailsSection = styled('div', {
     color: '$cyan300',
   },
 
+  a: {
+    color: '$cyan300',
+  },
+
   button: {
     cursor: 'pointer',
     marginTop: '2rem',
