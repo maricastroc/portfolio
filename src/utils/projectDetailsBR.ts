@@ -1,4 +1,4 @@
-export const projectsDetails = [
+export const projectsDetailsBR = [
   {
     id: 0,
     title: 'Atomic Shop',
@@ -12,7 +12,7 @@ export const projectsDetails = [
     categories: ['Interaction Design', 'Front End Development'],
     languages: ['TypeScript', 'Next.Js', 'React.Js'],
     summary:
-      'This project is a marketplace application integrated with the Stripe API for product registration and checkout. It provides a simulated user experience from browsing the catalog to completing the checkout process, including dynamic redirection to a success page. Additional features have been developed, such as a custom API for supplying checkout details to Stripe.',
+      'Este projeto é uma aplicação de marketplace integrada com a API do Stripe para registro e checkout de produtos. Ele oferece uma experiência simulada ao usuário, desde a navegação no catálogo até a conclusão do processo de checkout, incluindo o redirecionamento dinâmico para uma página de sucesso. Recursos adicionais foram desenvolvidos, como uma API personalizada para fornecer detalhes de checkout ao Stripe.',
     details:
       'In my first Next.js project, I utilized FileSystem Routing for generating new routes and employed the Stitches style library for server-side rendering and pre-bundling. I learned how to handle getServerSideProps and getStaticProps functions and created a custom API to interact with Stripe for checkout. Additionally, I implemented an interactive carousel using the keen-slider library to showcase catalog products.',
     tools: [

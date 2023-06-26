@@ -16,4 +16,5 @@ export default {
   home: 'Home',
   portfolio: 'Porfólio',
   contact_me: 'Fale comigo',
+  contact: 'Contato',
 }

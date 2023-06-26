@@ -58,7 +58,7 @@ export function Header() {
               </p>
             </Link>
             <p className={pathname === '/contact' ? 'active' : ''}>
-              {t('contact_me')}
+              {t('contact')}
             </p>
           </HeaderOptions>
         </HeaderItems>

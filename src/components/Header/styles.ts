@@ -8,6 +8,7 @@ export const HeaderContainer = styled('header', {
   flexDirection: 'column',
   width: '100%',
   backgroundColor: '$gray900',
+  zIndex: 10,
 
   span: {
     backgroundColor: '$cyan500',
@@ -23,6 +24,7 @@ export const HeaderContent = styled('div', {
   alignItems: 'center',
   width: '100%',
   padding: '3rem 1rem 1.5rem',
+  backgroundColor: '$gray900',
 
   '> div': {
     display: 'flex',

@@ -1,38 +1,40 @@
 import {
   ControlBorderSeparator,
-  ControlSeparator,
   ControlText,
   ControlsContainer,
   ControlsSection,
-  DescriptionSection,
-  DescriptionText,
-  DetailsSection,
-  ImageHeaderContainer,
-  ImagesPreviewContainer,
-  IntroSection,
   MainSection,
   NextSection,
   PrevSection,
-  PreviewSection,
   ProjectContainer,
   ProjectContent,
-  ProjectInfo,
   Separator,
-  TextProjectInfo,
-  ToolsSection,
 } from '@/styles/pages/project'
 import { useRouter } from 'next/router'
 import { CaretLeft, CaretRight } from 'phosphor-react'
 import { projectsDetails } from '../../../utils/projectsDetails'
+import { projectsDetailsBR } from '../../../utils/projectDetailsBR'
 import Link from 'next/link'
+import IntroSection from '@/components/project/IntroSection'
+import { ImageHeader } from '@/components/project/ImageHeader'
+import { DescriptionSection } from '@/components/project/DescriptionSection'
+import { PreviewSection } from '@/components/project/PreviewSection'
+import { useContext, useEffect, useState } from 'react'
+import { PortfolioContext } from '@/contexts/portfolioContext'
 
 export default function ProjectDetails() {
   const router = useRouter()
+  const [projectToShow, setProjectToShow] = useState<any>()
+  const { language } = useContext(PortfolioContext)
   const { id } = router.query
 
   const actualId = parseFloat(id as string)
 
-  const projectToShow = projectsDetails[actualId]
+  useEffect(() => {
+    language === 'en'
+      ? setProjectToShow(projectsDetails[actualId])
+      : setProjectToShow(projectsDetailsBR[actualId])
+  }, [language, actualId])
 
   const previousProjectName = projectsDetails[actualId - 1]?.title
   const nextProjectName = projectsDetails[actualId + 1]?.title
@@ -40,54 +42,25 @@ export default function ProjectDetails() {
   return (
     projectToShow && (
       <ProjectContainer>
-        <ImageHeaderContainer>
-          <img src={projectToShow.images[0].first} alt="" />
-        </ImageHeaderContainer>
+        <ImageHeader imageUrl={projectToShow.images[0].first} />
         <ProjectContent>
-          <IntroSection>
-            <Separator />
-            <ProjectInfo>
-              <TextProjectInfo>
-                <h2>{projectToShow.title}</h2>
-                <p>{projectToShow.summary}</p>
-              </TextProjectInfo>
-              <DetailsSection>
-                <p>{projectToShow.categories}</p>
-                <p>HTML / CSS / JS</p>
-                <button>
-                  <a href={projectToShow.preview}>VISIT WEBSITE</a>
-                </button>
-              </DetailsSection>
-            </ProjectInfo>
-            <Separator />
-          </IntroSection>
+          <IntroSection
+            title={projectToShow.title}
+            summary={projectToShow.summary}
+            categories={projectToShow.categories}
+            preview={projectToShow.preview}
+            languages={projectToShow.languages}
+          />
           <MainSection>
-            <DescriptionSection>
-              <DescriptionText>
-                <h2>Project Background</h2>
-                <p>{projectToShow.details}</p>
-              </DescriptionText>
-              <ToolsSection>
-                <h2>Build with:</h2>
-                {projectToShow.tools?.map((tool: string, index: number) => {
-                  return (
-                    <p key={index}>
-                      <span> {'>'} </span>
-                      {tool}
-                    </p>
-                  )
-                })}
-              </ToolsSection>
-            </DescriptionSection>
+            <DescriptionSection
+              details={projectToShow.details}
+              tools={projectToShow.tools}
+            />
             <Separator />
-            <PreviewSection>
-              <h2>Static Previews</h2>
-              <span></span>
-              <ImagesPreviewContainer>
-                <img src={projectToShow.images[0].second} alt="" />
-                <img src={projectToShow.images[0].third} alt="" />
-              </ImagesPreviewContainer>
-            </PreviewSection>
+            <PreviewSection
+              imageUrlSecond={projectToShow.images[0].second}
+              imageUrlThird={projectToShow.images[0].third}
+            />
           </MainSection>
         </ProjectContent>
         <ControlsContainer>
@@ -103,8 +76,8 @@ export default function ProjectDetails() {
                   <>
                     <CaretLeft size={32} />
                     <ControlText>
-                      <h2>{previousProjectName}</h2>
                       <p>Previous Project</p>
+                      <h2>{previousProjectName}</h2>
                     </ControlText>
                   </>
                 ) : (
@@ -112,7 +85,6 @@ export default function ProjectDetails() {
                 )}
               </PrevSection>
             </Link>
-            {actualId < 8 && actualId !== 0 ? <ControlSeparator /> : null}
             <Link
               href="/portfolio/project/[id]"
               as={`/portfolio/project/${actualId + 1}`}
@@ -123,8 +95,8 @@ export default function ProjectDetails() {
                   <>
                     <CaretRight size={32} />
                     <ControlText>
-                      <h2>{nextProjectName}</h2>
                       <p>Next Project</p>
+                      <h2>{nextProjectName}</h2>
                     </ControlText>
                   </>
                 ) : (
