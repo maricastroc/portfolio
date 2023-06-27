@@ -85,10 +85,16 @@ export const SendMessageButton = styled('button', {
   textTransform: 'uppercase',
   width: '12.5rem',
 
-  '&:hover': {
+  '&:not(:disabled):hover': {
     backgroundColor: '$cyan700',
     color: '$white',
     border: '2px solid $cyan700',
     transition: '200ms',
+  },
+
+  '&:disabled': {
+    border: '2px solid $gray400',
+    color: '$gray400',
+    cursor: 'not-allowed',
   },
 })

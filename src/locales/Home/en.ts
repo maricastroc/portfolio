@@ -33,4 +33,8 @@ export default {
   message_placeholder: 'How can I help?',
   send_message: 'Send message',
   project: 'Project',
+  thank_you: 'Thank you!',
+  success_message:
+    "Your message has been sent and I'll get in touch as soon as possible.",
+  back_to_home: 'Back to Home',
 }

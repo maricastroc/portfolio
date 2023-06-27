@@ -1,4 +1,5 @@
 import axios from 'axios'
+import * as Dialog from '@radix-ui/react-dialog'
 import {
   ContactForm,
   ContactMeContainer,
@@ -7,6 +8,8 @@ import {
 } from './styles'
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
+import { SuccessModal } from '../SuccessModal'
+import { useState } from 'react'
 
 interface DataProps {
   name: string
@@ -15,10 +18,17 @@ interface DataProps {
 }
 
 export function ContactMe() {
-  const { register, handleSubmit } = useForm()
+  const { register, handleSubmit, reset, watch } = useForm()
   const { t } = useTranslation()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
+
+  const watchedFields = watch(['name', 'email', 'message'])
+  const isButtonDisabled = Object.values(watchedFields).some((field) => !field)
 
   function sendEmail(data: DataProps) {
+    setIsSubmitting(true)
+
     const emailData = {
       service_id: 'service_maricastroc',
       template_id: 'template_82cc2cm',
@@ -34,9 +44,14 @@ export function ContactMe() {
       .post('https://api.emailjs.com/api/v1.0/email/send', emailData)
       .then((response) => {
         console.log('E-mail sent successfully!', response.data)
+        setIsDialogOpen(true)
+        reset()
       })
       .catch((error) => {
         console.error('Error sending e-mail:', error)
+      })
+      .finally(() => {
+        setIsSubmitting(false)
       })
   }
 
@@ -76,7 +91,16 @@ export function ContactMe() {
             {...register('message')}
           />
         </FormItem>
-        <SendMessageButton type="submit">{t('send_message')}</SendMessageButton>
+        <SendMessageButton
+          type="submit"
+          className={isButtonDisabled || isSubmitting ? 'disabled' : ''}
+          disabled={isButtonDisabled || isSubmitting}
+        >
+          {t('send_message')}
+        </SendMessageButton>
+        <Dialog.Root open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <SuccessModal />
+        </Dialog.Root>
       </ContactForm>
     </ContactMeContainer>
   )
