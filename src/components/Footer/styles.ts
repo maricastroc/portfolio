@@ -80,8 +80,13 @@ export const IconsContainer = styled('section', {
   gap: '0.95rem',
   alignItems: 'center',
 
+  a: {
+    color: '$gray300',
+  },
+
   svg: {
     fontSize: '1.57rem',
+    color: '$gray300',
   },
 
   '@media (min-width: 680px)': {

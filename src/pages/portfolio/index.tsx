@@ -7,6 +7,7 @@ import {
 } from '@/components/portfolio/ProjectCard'
 import { PortfolioContext } from '@/contexts/portfolioContext'
 import { useContext, useEffect, useState } from 'react'
+import { ContactMeSection } from '@/components/ContactMeSection'
 
 export default function Portfolio() {
   const { language } = useContext(PortfolioContext)
@@ -33,6 +34,7 @@ export default function Portfolio() {
             />
           )
         })}
+        <ContactMeSection />
       </PortfolioContainer>
     )
   )

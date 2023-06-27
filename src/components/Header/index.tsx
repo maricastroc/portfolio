@@ -57,9 +57,11 @@ export function Header() {
                 {t('portfolio')}
               </p>
             </Link>
-            <p className={pathname === '/contact' ? 'active' : ''}>
-              {t('contact')}
-            </p>
+            <Link href="/contact">
+              <p className={pathname === '/contact' ? 'active' : ''}>
+                {t('contact')}
+              </p>
+            </Link>
           </HeaderOptions>
         </HeaderItems>
       </HeaderContent>

@@ -22,6 +22,7 @@ import { PreviewSection } from '@/components/project/PreviewSection'
 import { useContext, useEffect, useState } from 'react'
 import { PortfolioContext } from '@/contexts/portfolioContext'
 import { useTranslation } from 'react-i18next'
+import { ContactMeSection } from '@/components/ContactMeSection'
 
 export default function ProjectDetails() {
   const { t } = useTranslation()
@@ -109,6 +110,7 @@ export default function ProjectDetails() {
           </ControlsSection>
           <ControlBorderSeparator />
         </ControlsContainer>
+        <ContactMeSection />
       </ProjectContainer>
     )
   )
