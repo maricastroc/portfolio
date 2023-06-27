@@ -7,6 +7,7 @@ import {
   AboutMeText,
   PortfolioButton,
 } from './styles'
+import Link from 'next/link'
 
 export function AboutMeSection() {
   const { t } = useTranslation()
@@ -21,7 +22,9 @@ export function AboutMeSection() {
         <p>{t('about_me_description_1')}</p>
         <p>{t('about_me_description_2')}</p>
         <p>{t('check_my_work')}</p>
-        <PortfolioButton>{t('go_to_portfolio')}</PortfolioButton>
+        <Link href="/portfolio">
+          <PortfolioButton>{t('go_to_portfolio')}</PortfolioButton>
+        </Link>
       </AboutMeText>
     </AboutMeContainer>
   )
