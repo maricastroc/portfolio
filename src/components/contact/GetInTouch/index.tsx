@@ -9,22 +9,16 @@ import {
   faInstagram,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
+import { useTranslation } from 'react-i18next'
 
 export function GetInTouch() {
+  const { t } = useTranslation()
+
   return (
     <GetInTouchContainer>
-      <h2>Get In Touch</h2>
+      <h2>{t('get_in_touch')}</h2>
       <GetInTouchContent>
-        <p>
-          I&apos;d love to hear about what you&apos;re working on and how I
-          could help. I&apos;m currently looking for a new role and am open to a
-          wide range of opportunities. My preference would be to find a position
-          in a company in London. But I&apos;m also happy to hear about
-          opportunites that don&apos;t fit that description. I&apos;m a
-          hard-working and positive person who will always approach each task
-          with a sense of purpose and attention to detail. Please do feel free
-          to check out my online profiles below and get in touch using the form.
-        </p>
+        <p>{t('text_get_in_touch')}</p>
         <IconsContainer>
           <a
             href="https://github.com/maricastroc"

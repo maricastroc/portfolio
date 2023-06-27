@@ -23,6 +23,7 @@ import { useContext, useEffect, useState } from 'react'
 import { PortfolioContext } from '@/contexts/portfolioContext'
 import { useTranslation } from 'react-i18next'
 import { ContactMeSection } from '@/components/ContactMeSection'
+import Head from 'next/head'
 
 export default function ProjectDetails() {
   const { t } = useTranslation()
@@ -44,74 +45,81 @@ export default function ProjectDetails() {
 
   return (
     projectToShow && (
-      <ProjectContainer>
-        <ImageHeader imageUrl={projectToShow.images[0].first} />
-        <ProjectContent>
-          <IntroSection
-            title={projectToShow.title}
-            summary={projectToShow.summary}
-            categories={projectToShow.categories}
-            preview={projectToShow.preview}
-            languages={projectToShow.languages}
-          />
-          <MainSection>
-            <DescriptionSection
-              details={projectToShow.details}
-              tools={projectToShow.tools}
+      <>
+        <Head>
+          <title>
+            {t('project')} | {projectToShow.title}
+          </title>
+        </Head>
+        <ProjectContainer>
+          <ImageHeader imageUrl={projectToShow.images[0].first} />
+          <ProjectContent>
+            <IntroSection
+              title={projectToShow.title}
+              summary={projectToShow.summary}
+              categories={projectToShow.categories}
+              preview={projectToShow.preview}
+              languages={projectToShow.languages}
             />
-            <Separator />
-            <PreviewSection
-              imageUrlSecond={projectToShow.images[0].second}
-              imageUrlThird={projectToShow.images[0].third}
-            />
-          </MainSection>
-        </ProjectContent>
-        <ControlsContainer>
-          <ControlBorderSeparator />
-          <ControlsSection>
-            <Link
-              href="/portfolio/project/[id]"
-              as={`/portfolio/project/${actualId - 1}`}
-              prefetch={false}
-            >
-              <PrevSection>
-                {actualId > 0 ? (
-                  <>
-                    <CaretLeft size={32} />
-                    <ControlText>
-                      <p>{t('previous_project')}</p>
-                      <h2>{previousProjectName}</h2>
-                    </ControlText>
-                  </>
-                ) : (
-                  ''
-                )}
-              </PrevSection>
-            </Link>
-            <Link
-              href="/portfolio/project/[id]"
-              as={`/portfolio/project/${actualId + 1}`}
-              prefetch={false}
-            >
-              <NextSection>
-                {actualId < 8 ? (
-                  <>
-                    <CaretRight size={32} />
-                    <ControlText>
-                      <p>{t('next_project')}</p>
-                      <h2>{nextProjectName}</h2>
-                    </ControlText>
-                  </>
-                ) : (
-                  ''
-                )}
-              </NextSection>
-            </Link>
-          </ControlsSection>
-          <ControlBorderSeparator />
-        </ControlsContainer>
-        <ContactMeSection />
-      </ProjectContainer>
+            <MainSection>
+              <DescriptionSection
+                details={projectToShow.details}
+                tools={projectToShow.tools}
+              />
+              <Separator />
+              <PreviewSection
+                imageUrlSecond={projectToShow.images[0].second}
+                imageUrlThird={projectToShow.images[0].third}
+              />
+            </MainSection>
+          </ProjectContent>
+          <ControlsContainer>
+            <ControlBorderSeparator />
+            <ControlsSection>
+              <Link
+                href="/portfolio/project/[id]"
+                as={`/portfolio/project/${actualId - 1}`}
+                prefetch={false}
+              >
+                <PrevSection>
+                  {actualId > 0 ? (
+                    <>
+                      <CaretLeft size={32} />
+                      <ControlText>
+                        <p>{t('previous_project')}</p>
+                        <h2>{previousProjectName}</h2>
+                      </ControlText>
+                    </>
+                  ) : (
+                    ''
+                  )}
+                </PrevSection>
+              </Link>
+              <Link
+                href="/portfolio/project/[id]"
+                as={`/portfolio/project/${actualId + 1}`}
+                prefetch={false}
+              >
+                <NextSection>
+                  {actualId < 8 ? (
+                    <>
+                      <CaretRight size={32} />
+                      <ControlText>
+                        <p>{t('next_project')}</p>
+                        <h2>{nextProjectName}</h2>
+                      </ControlText>
+                    </>
+                  ) : (
+                    ''
+                  )}
+                </NextSection>
+              </Link>
+            </ControlsSection>
+            <ControlBorderSeparator />
+          </ControlsContainer>
+          <ContactMeSection />
+        </ProjectContainer>
+      </>
     )
   )
 }

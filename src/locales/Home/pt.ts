@@ -24,4 +24,13 @@ export default {
   build_with: 'Ferramentas usadas',
   static_previews: 'Previews da Aplicação',
   view_project: 'Ver Projeto',
+  get_in_touch: 'Fale comigo!',
+  name: 'Nome',
+  email: 'E-mail',
+  text_get_in_touch:
+    'Eu adoraria saber com o que você está trabalhando e como eu poderia ajudar. Atualmente, estou em busca de uma nova posição como desenvolvedora front-end e estou aberta a uma ampla variedade de oportunidades. Sou uma pessoa extremamente dedicada e positiva, que sempre aborda cada tarefa com um senso de compromisso e atenção aos detalhes. Por favor, sinta-se à vontade para verificar minhas redes sociais abaixo e entrar em contato utilizando o formulário.',
+  message: 'Mensagem',
+  message_placeholder: 'Como posso ajudar?',
+  send_message: 'Enviar mensagem',
+  project: 'Projeto',
 }

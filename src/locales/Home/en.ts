@@ -24,4 +24,13 @@ export default {
   build_with: 'Build with',
   static_previews: 'Static Previews',
   view_project: 'View Project',
+  get_in_touch: 'Get In Touch!',
+  name: 'Name',
+  email: 'E-mail',
+  text_get_in_touch:
+    "I'd love to hear about what you're working on and how I could help. I'm currently looking for a new role and am open to a wide range of opportunities. I'm a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.",
+  message: 'Message',
+  message_placeholder: 'How can I help?',
+  send_message: 'Send message',
+  project: 'Project',
 }

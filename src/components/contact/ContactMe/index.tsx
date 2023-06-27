@@ -6,6 +6,7 @@ import {
   SendMessageButton,
 } from './styles'
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form'
+import { useTranslation } from 'react-i18next'
 
 interface DataProps {
   name: string
@@ -15,6 +16,7 @@ interface DataProps {
 
 export function ContactMe() {
   const { register, handleSubmit } = useForm()
+  const { t } = useTranslation()
 
   function sendEmail(data: DataProps) {
     const emailData = {
@@ -44,12 +46,12 @@ export function ContactMe() {
 
   return (
     <ContactMeContainer>
-      <h2>Contact Me</h2>
+      <h2>{t('contact')}</h2>
       <ContactForm
         onSubmit={handleSubmit(onSubmit as SubmitHandler<FieldValues>)}
       >
         <FormItem>
-          <label htmlFor="">Name</label>
+          <label htmlFor="">{t('name')}</label>
           <input
             type="text"
             placeholder="Mariana Castro"
@@ -58,7 +60,7 @@ export function ContactMe() {
           />
         </FormItem>
         <FormItem>
-          <label htmlFor="">E-mail</label>
+          <label htmlFor="">{t('email')}</label>
           <input
             type="email"
             placeholder="email@example.com"
@@ -67,14 +69,14 @@ export function ContactMe() {
           />
         </FormItem>
         <FormItem>
-          <label htmlFor="">Message</label>
+          <label htmlFor="">{t('message')}</label>
           <textarea
             required
-            placeholder="How can I help?"
+            placeholder={t('message_placeholder')}
             {...register('message')}
           />
         </FormItem>
-        <SendMessageButton type="submit">Send Message</SendMessageButton>
+        <SendMessageButton type="submit">{t('send_message')}</SendMessageButton>
       </ContactForm>
     </ContactMeContainer>
   )
