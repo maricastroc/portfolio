@@ -8,7 +8,7 @@ export const globalStyles = globalCss({
 
     '&:focus': {
       outline: 'none',
-      boxShadow: '0 0 0 2px #03dac6',
+      boxShadow: 'none',
     },
   },
 

@@ -3,6 +3,7 @@ import { styled } from '@/styles'
 export const PortfolioContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
+  justifyContent: 'center',
   padding: '2rem',
   gap: '5rem',
 

@@ -19,10 +19,12 @@ export const ProjectCardContainer = styled('div', {
 
     '&.left': {
       flexDirection: 'row',
+      margin: '0 auto',
     },
 
     '&.right': {
       flexDirection: 'row-reverse',
+      margin: '0 auto',
     },
 
     img: {
