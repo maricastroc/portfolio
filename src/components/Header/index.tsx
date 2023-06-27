@@ -4,6 +4,8 @@ import {
   HeaderItems,
   HeaderOptions,
   LanguageButton,
+  SmallMenu,
+  SmallMenuOptions,
 } from './styles'
 import { List } from 'phosphor-react'
 import { useTranslation } from 'react-i18next'
@@ -16,6 +18,7 @@ export function Header() {
   const { t } = useTranslation()
   const [englishLanguage, setEnglishLanguage] = useState(true)
   const { handleSetLanguage } = useContext(PortfolioContext)
+  const [openMenu, setOpenMenu] = useState(false)
   const { i18n } = useTranslation()
 
   const router = useRouter()
@@ -47,7 +50,20 @@ export function Header() {
           <h2>MARIANA CASTRO</h2>
         </div>
         <HeaderItems>
-          <List size={26} />
+          <SmallMenu onClick={() => setOpenMenu(!openMenu)}>
+            <List size={26} />
+            <SmallMenuOptions className={openMenu ? '' : 'hidden'}>
+              <Link href="/">
+                <p>{t('home')}</p>
+              </Link>
+              <Link href="/portfolio">
+                <p>{t('portfolio')}</p>
+              </Link>
+              <Link href="/contact">
+                <p>{t('contact')}</p>
+              </Link>
+            </SmallMenuOptions>
+          </SmallMenu>
           <HeaderOptions>
             <Link href="/">
               <p className={pathname === '/' ? 'active' : ''}>{t('home')}</p>

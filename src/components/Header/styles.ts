@@ -17,6 +17,54 @@ export const HeaderContainer = styled('header', {
   },
 })
 
+export const SmallMenu = styled('div', {
+  display: 'flex',
+  position: 'relative',
+
+  svg: {
+    color: '$gray300',
+    opacity: 0.9,
+  },
+
+  '@media (min-width: 768px)': {
+    display: 'none',
+  },
+})
+
+export const SmallMenuOptions = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'absolute',
+  backgroundColor: '$gray800',
+  color: '$gray300',
+  textTransform: 'uppercase',
+  gap: '2rem',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '12rem',
+  right: '0rem',
+  top: '2rem',
+  paddingTop: '2rem',
+  paddingBottom: '2rem',
+  borderRadius: '8px',
+
+  a: {
+    color: '$gray300',
+    fontFamily: 'Space Mono, monospace',
+    letterSpacing: '1px',
+  },
+
+  p: {
+    fontSize: '0.75rem',
+    fontFamily: 'Space Mono, monospace',
+    letterSpacing: '1px',
+  },
+
+  '&.hidden': {
+    display: 'none',
+  },
+})
+
 export const HeaderContent = styled('div', {
   position: 'sticky',
   display: 'flex',
