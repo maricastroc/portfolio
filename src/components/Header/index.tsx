@@ -47,7 +47,9 @@ export function Header() {
           <LanguageButton onClick={handleChangeLanguage}>
             {englishLanguage ? 'EN' : 'PT'}
           </LanguageButton>
-          <h2>MARIANA CASTRO</h2>
+          <Link href="/">
+            <h2>MARIANA CASTRO</h2>
+          </Link>
         </div>
         <HeaderItems>
           <SmallMenu onClick={() => setOpenMenu(!openMenu)}>
