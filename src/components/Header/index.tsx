@@ -66,7 +66,7 @@ export function Header() {
       <HeaderContent>
         <div>
           <LanguageButton onClick={handleChangeLanguage}>
-            {isClient ? (language === 'en' ? 'EN' : 'PT') : ''}
+            {isClient ? (language === 'en' || !language ? 'EN' : 'PT') : 'EN'}
           </LanguageButton>
           <Link href="/">
             <h2>MARIANA CASTRO</h2>
