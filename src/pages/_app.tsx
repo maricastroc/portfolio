@@ -20,7 +20,7 @@ globalStyles()
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <PortfolioContextProvider>
+    <PortfolioContextProvider initialLanguage="en">
       <I18nextProvider i18n={i18n}>
         <Container>
           <Header />

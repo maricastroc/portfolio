@@ -9,34 +9,55 @@ import {
 } from './styles'
 import { List } from 'phosphor-react'
 import { useTranslation } from 'react-i18next'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { PortfolioContext } from '@/contexts/portfolioContext'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export function Header() {
   const { t } = useTranslation()
-  const [englishLanguage, setEnglishLanguage] = useState(true)
+  const [language, setLanguage] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('language')
+      return storedLanguage
+    }
+    return 'en'
+  })
   const { handleSetLanguage } = useContext(PortfolioContext)
   const [openMenu, setOpenMenu] = useState(false)
+  const [isClient, setIsClient] = useState(false)
   const { i18n } = useTranslation()
 
   const router = useRouter()
   const { pathname } = router
 
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng)
-  }
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    const changeLanguage = (lng: string) => {
+      i18n.changeLanguage(lng)
+    }
+
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('language')
+      if (storedLanguage) {
+        setLanguage(storedLanguage)
+        changeLanguage(storedLanguage)
+      }
+    }
+  }, [i18n, language])
 
   function handleChangeLanguage() {
-    if (englishLanguage) {
-      changeLanguage('pt')
+    if (language === 'en') {
       handleSetLanguage('pt')
-      setEnglishLanguage(false)
+      setLanguage('pt')
+      localStorage.setItem('language', 'pt')
     } else {
-      changeLanguage('en')
       handleSetLanguage('en')
-      setEnglishLanguage(true)
+      setLanguage('en')
+      localStorage.setItem('language', 'en')
     }
   }
 
@@ -45,7 +66,7 @@ export function Header() {
       <HeaderContent>
         <div>
           <LanguageButton onClick={handleChangeLanguage}>
-            {englishLanguage ? 'EN' : 'PT'}
+            {isClient ? (language === 'en' ? 'EN' : 'PT') : ''}
           </LanguageButton>
           <Link href="/">
             <h2>MARIANA CASTRO</h2>
