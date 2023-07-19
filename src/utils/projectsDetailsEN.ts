@@ -31,7 +31,7 @@ export const projectsDetailsEN = [
       'ESLint',
       'Prettier',
     ],
-    preview: 'maricastroc-myblog.vercel.app',
+    preview: 'https://maricastroc-myblog.vercel.app/',
   },
   {
     id: 1,
