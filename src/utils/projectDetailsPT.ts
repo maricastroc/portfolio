@@ -10,7 +10,7 @@ export const projectsDetailsPT = [
       },
     ],
     categories: ['Interaction Design', 'FullStack Development'],
-    languages: ['TypeScript', 'Next.Js', 'Prisma', 'MySQL'],
+    languages: ['TypeScript', 'Next.Js', 'Prisma'],
     summary:
       'Meu primeiro projeto full-stack é uma aplicação de rede social em pequena escala, envolvendo todas as operações CRUD. Os usuários podem se cadastrar diretamente no aplicativo ou acessá-lo como convidados.',
     details:
