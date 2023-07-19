@@ -12,9 +12,9 @@ export const projectsDetailsPT = [
     categories: ['Interaction Design', 'FullStack Development'],
     languages: ['TypeScript', 'Next.Js', 'Prisma'],
     summary:
-      'Meu primeiro projeto full-stack é uma aplicação de rede social em pequena escala, envolvendo todas as operações CRUD. Os usuários podem se cadastrar diretamente no aplicativo ou acessá-lo como convidados.',
+      'Este é o meu primeiro projeto pessoal full-stack, consistindo em uma aplicação que simula uma rede social em pequena escala. Ela permite que os usuários se registrem diretamente dentro da aplicação ou acessem como convidados. A aplicação inclui uma página para criar, ler, atualizar e excluir postagens e comentários, assim como uma seção de edição de perfil para usuários logados e uma página de criação de usuário para visitantes.',
     details:
-      'Para este projeto, utilizei um banco de dados Next.js, usando Prisma e MySQL. Isso me permitiu criar um backend junto com minha aplicação frontend, possibilitando a persistência de dados e o gerenciamento de requisições por meio da criação de rotas e endpoints dentro do Next.js para conexão com o banco de dados.',
+      'Para este projeto, eu utilizei um banco de dados Next.js, usando o Prisma e o MySQL. Isso me permitiu criar um backend junto com minha aplicação frontend, possibilitando a persistência de dados e o gerenciamento de requisições através da criação de rotas e endpoints dentro do Next.js para conexão com o banco de dados. Uma das experiências de aprendizado mais significativas neste projeto foi construir rotas de API para interagir com o banco de dados.',
     tools: [
       'Typescript',
       'Next.Js',
