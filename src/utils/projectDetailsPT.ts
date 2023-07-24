@@ -1,6 +1,43 @@
 export const projectsDetailsPT = [
   {
     id: 0,
+    title: 'Book Wise',
+    images: [
+      {
+        first: '/assets/projects/book_wise/img_1.png',
+        second: '/assets/projects/book_wise/img_2.png',
+        third: '/assets/projects/book_wise/img_3.png',
+      },
+    ],
+    categories: ['Interaction Design', 'FullStack Development'],
+    languages: ['TypeScript', 'Next.Js', 'Prisma'],
+    summary:
+      'A aplicação consiste numa plataforma de avaliação de livros, em que o leitor pode ver as recomendações de outros leitores e também fazer suas próprias avaliações dos livros que já leu, além de pesquisar livros por categorias e conferir dados sobre seu histórico de leitura - como total de páginas e autores lidos -. O aplicativo também possui autenticação social através de uma conta do Google ou do GitHub.',
+    details:
+      'A parte mais desafiadora desse projeto foi a criação de rotas e endpoints para a interação com o banco de dados. Como os dados cadastrados têm muitos relacionamentos entre si e, ainda, há alguns dados que precisam ser calculados no corpo da requisição, em alguns momentos foi necessária uma lógica bem elaborada para sua obtenção. O recurso de server-side rendering do Next.js foi utilizado para renderizar as informações do banco de dados pelo lado do servidor - usando o getServerSideProps - e utilizei um arquivo seed.ts para popular o banco de dados. A biblioteca do NextAuth.js foi utilizada para a implementação da autenticação social do usuário.',
+    tools: [
+      'Typescript',
+      'Next.Js',
+      'React.js',
+      'NextAuth.js',
+      'Prisma',
+      'Stitches',
+      'axios',
+      'nookies',
+      'date-fns',
+      'font-awesome',
+      'zod',
+      'react-hook-form',
+      'phosphor-react',
+      'radix-ui',
+      'react-toastify',
+      'ESLint',
+      'Prettier',
+    ],
+    preview: 'https://book-wise-puce.vercel.app/',
+  },
+  {
+    id: 1,
     title: 'Blogger',
     images: [
       {
@@ -34,7 +71,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-myblog.vercel.app/',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Atomic Shop',
     images: [
       {
@@ -67,7 +104,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-atomic-shop.netlify.app/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Comments Section',
     images: [
       {
@@ -95,7 +132,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-interactive-post-comments.netlify.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Github Blog',
     images: [
       {
@@ -124,7 +161,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-github-blog.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Art Galleria',
     images: [
       {
@@ -150,7 +187,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-galleria-slideshow.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Planets Fact',
     images: [
       {
@@ -178,7 +215,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-planets-fact-site.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Coffee Delivery',
     images: [
       {
@@ -208,7 +245,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-coffee-delivery.netlify.app/',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Devfinder',
     images: [
       {
@@ -235,7 +272,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-search-github-user.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Coffee Roasters',
     images: [
       {
@@ -261,7 +298,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-coffeeroasters-page.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Dictionary',
     images: [
       {
