@@ -5,10 +5,18 @@ export const projectsResumePT = [
     description:
       'Aplicação fullstack completa para avaliação de livros e descoberta de recomendações de outros leitores, construída com Next.js, Prisma e MySQL.',
     imageUrl: './assets/portfolio/book_wise.png',
-    position: 'left',
+    position: 'right',
   },
   {
     id: 1,
+    title: 'Movie Mentor',
+    description:
+      'Plataforma de entretenimento que utiliza a API TheMovieDB para exibir séries e filmes, com sinopses, detalhes técnicos e navegação por categorias.',
+    imageUrl: './assets/portfolio/movie_mentor.png',
+    position: 'left',
+  },
+  {
+    id: 2,
     title: 'Blogger',
     description:
       'Aplicação de rede social de pequena escala, com operações CRUD, usando Prisma e MySQL para construir um banco de dados no Next.js.',
@@ -16,7 +24,7 @@ export const projectsResumePT = [
     position: 'right',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Atomic Shop',
     description:
       'Aplicação de marketplace elaborada com Next.js e React.js, utilizando a API do Stripe para o registro de produtos e finalização de compras.',
@@ -24,7 +32,7 @@ export const projectsResumePT = [
     position: 'left',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Interactive Comments Section',
     description:
       'Página de posts e seções de comentários dinâmicas, com operações CRUD, construída React.js e TypeScript.',
@@ -32,7 +40,7 @@ export const projectsResumePT = [
     position: 'right',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Github Blog',
     description:
       'Aplicação para exibição de  todos os repositórios de um usuário do GitHub, fornecendo informações detalhadas sobre cada repositório.',
@@ -40,7 +48,7 @@ export const projectsResumePT = [
     position: 'left',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Art Galleria Slideshow',
     description:
       'Galeria de arte elaborada com React.js, apresentando slideshow, masonry layout e visualização em lightbox.',
@@ -48,7 +56,7 @@ export const projectsResumePT = [
     position: 'right',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Planets Fact Site',
     description:
       'Site de oito páginas que reúne curiosidades sobre os planetas do sistema solar, feito com React.js',
@@ -56,7 +64,7 @@ export const projectsResumePT = [
     position: 'left',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Coffee Delivery',
     description:
       'Aplicação construída com React.js que simula o e-commerce de uma cafeteria, com página de checkout de produtos.',
@@ -64,7 +72,7 @@ export const projectsResumePT = [
     position: 'right',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Devfinder',
     description:
       'Projeto construído com ReactJS, utilizando a GitHub API, que permite pesquisar por um usuário do GitHub pelo nome e exibir detalhes de seu perfil.',
@@ -72,7 +80,7 @@ export const projectsResumePT = [
     position: 'left',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Coffee Roasters',
     description:
       'Site de 3 páginas que simula o e-commerce de uma cafeteria, com seção dinâmica de customização do pedido do cliente, construída com React.js.',
@@ -80,7 +88,7 @@ export const projectsResumePT = [
     position: 'right',
   },
   {
-    id: 10,
+    id: 11,
     title: 'Dictionary',
     description:
       'Dicionário construído com React.js, utilizando a Dictionary API e incluindo temas de cores e seleção de fonte.',

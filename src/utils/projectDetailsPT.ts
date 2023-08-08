@@ -38,6 +38,36 @@ export const projectsDetailsPT = [
   },
   {
     id: 1,
+    title: 'Movie Mentor',
+    images: [
+      {
+        first: '/assets/projects/movie_mentor/img_1.png',
+        second: '/assets/projects/movie_mentor/img_2.png',
+        third: '/assets/projects/movie_mentor/img_3.png',
+      },
+    ],
+    categories: ['Interaction Design', 'Front-end Development'],
+    languages: ['TypeScript', 'Next.Js', 'React.Js'],
+    summary:
+      'O projeto consiste em uma aplicação de entretenimento que utiliza a API TheMovieDB para exibir séries e filmes de diferentes categorias - popular, trending, top-rated etc. A aplicação fornece detalhes sobre a sinopse e informações técnicas para cada cartão de série/filme exibido. Além disso, ela inclui uma barra de busca avançada para facilitar a pesquisa de títulos específicos, e oferece a opção de explorar os itens de mídia por meio de vários gêneros disponíveis. A autenticação social do usuário é realizada por meio do Next oAuth, permitindo  login através das contas do Gmail ou GitHub.',
+    details:
+      'O principal desafio da aplicação foi lidar com a extensa quantidade de rotas disponíveis para a navegação do usuário. Para simplificar essa organização, foi criado um arquivo lib/tbmd.ts para configurar todos os endpoints utilizados. O projeto proporcionou uma excelente oportunidade para praticar a passagem de parâmetros por meio de rotas, além de utilizar o recurso de renderização do lado do servidor do Next.js, usando getServerSideProps, para renderizar informações do banco de dados no lado do servidor. A biblioteca NextAuth.js foi empregada para implementar a autenticação de usuário por meio de redes sociais.',
+    tools: [
+      'Typescript',
+      'Next.Js',
+      'React.js',
+      'NextAuth.js',
+      'NextSeo.js',
+      'Stitches',
+      'font-awesome',
+      'phosphor-react',
+      'ESLint',
+      'Prettier',
+    ],
+    preview: 'https://maricastroc-entertainment-web-app.vercel.app/',
+  },
+  {
+    id: 2,
     title: 'Blogger',
     images: [
       {
@@ -71,7 +101,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-myblog.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Atomic Shop',
     images: [
       {
@@ -104,7 +134,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-atomic-shop.netlify.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Comments Section',
     images: [
       {
@@ -132,7 +162,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-interactive-post-comments.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Github Blog',
     images: [
       {
@@ -161,7 +191,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-github-blog.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Art Galleria',
     images: [
       {
@@ -187,7 +217,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-galleria-slideshow.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Planets Fact',
     images: [
       {
@@ -215,7 +245,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-planets-fact-site.netlify.app/',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Coffee Delivery',
     images: [
       {
@@ -245,7 +275,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-coffee-delivery.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Devfinder',
     images: [
       {
@@ -272,7 +302,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-search-github-user.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Coffee Roasters',
     images: [
       {
@@ -298,7 +328,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-coffeeroasters-page.netlify.app/',
   },
   {
-    id: 10,
+    id: 11,
     title: 'Dictionary',
     images: [
       {

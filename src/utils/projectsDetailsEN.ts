@@ -38,6 +38,36 @@ export const projectsDetailsEN = [
   },
   {
     id: 1,
+    title: 'Movie Mentor',
+    images: [
+      {
+        first: '/assets/projects/movie_mentor/img_1.png',
+        second: '/assets/projects/movie_mentor/img_2.png',
+        third: '/assets/projects/movie_mentor/img_3.png',
+      },
+    ],
+    categories: ['Interaction Design', 'Front-end Development'],
+    languages: ['TypeScript', 'Next.Js', 'React.Js'],
+    summary:
+      'The application consists of a book rating platform, where the reader can see recommendations from other readers and also make their own ratings of the books they have already read. Additionally, users can search for books by categories and check data about their reading history, such as the total number of pages and authors they have read. The app also features social authentication through a Google or GitHub account.',
+    details:
+      "The most challenging part of this project was creating routes and endpoints for interacting with the database. Since the registered data had many relationships among themselves, and there were some data that needed to be calculated in the request body, it required a well-thought-out logic to obtain them at times. I leveraged Next.js's server-side rendering feature, using getServerSideProps, to render database information on the server-side. NextAuth.js library was employed to implement social user authentication.",
+    tools: [
+      'Typescript',
+      'Next.Js',
+      'React.js',
+      'NextAuth.js',
+      'NextSeo.js',
+      'Stitches',
+      'font-awesome',
+      'phosphor-react',
+      'ESLint',
+      'Prettier',
+    ],
+    preview: 'https://maricastroc-entertainment-web-app.vercel.app/',
+  },
+  {
+    id: 2,
     title: 'Blogger',
     images: [
       {
@@ -71,7 +101,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-myblog.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Atomic Shop',
     images: [
       {
@@ -104,7 +134,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-atomic-shop.netlify.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Comments Section',
     images: [
       {
@@ -132,7 +162,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-interactive-post-comments.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Github Blog',
     images: [
       {
@@ -161,7 +191,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-github-blog.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Art Galleria',
     images: [
       {
@@ -187,7 +217,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-galleria-slideshow.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Planets Fact',
     images: [
       {
@@ -215,7 +245,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-planets-fact-site.netlify.app/',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Coffee Delivery',
     images: [
       {
@@ -245,7 +275,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-coffee-delivery.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Devfinder',
     images: [
       {
@@ -272,7 +302,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-search-github-user.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Coffee Roasters',
     images: [
       {
@@ -298,7 +328,7 @@ export const projectsDetailsEN = [
     preview: 'https://maricastroc-coffeeroasters-page.netlify.app/',
   },
   {
-    id: 10,
+    id: 11,
     title: 'Dictionary',
     images: [
       {

@@ -5,10 +5,18 @@ export const projectsResumeEN = [
     description:
       'Fullstack platform for rating books and discovering recommendations from fellow readers, built with Next.js., Prisma and MySQL.',
     imageUrl: './assets/portfolio/book_wise.png',
-    position: 'left',
+    position: 'right',
   },
   {
     id: 1,
+    title: 'Movie Mentor',
+    description:
+      'An entertainment app using TheMovieDB API for showcasing TV shows and movies, complete with synopses, technical details and genre exploration.',
+    imageUrl: './assets/portfolio/movie_mentor.png',
+    position: 'left',
+  },
+  {
+    id: 2,
     title: 'Blogger',
     description:
       'Full-stack small-scale social network application, with CRUD operations, using Prisma and mySQL to build a Next.js database.',
@@ -16,7 +24,7 @@ export const projectsResumeEN = [
     position: 'right',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Atomic Shop',
     description:
       'Marketplace application build with Next.js and React.js,  that uses Stripe API for product registration and checkout purposes.',
@@ -24,7 +32,7 @@ export const projectsResumeEN = [
     position: 'left',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Interactive Comments Section',
     description:
       'Application that simulates a page of posts and dynamic comment sections, with CRUD operations, build with React.js and Typescript.',
@@ -32,7 +40,7 @@ export const projectsResumeEN = [
     position: 'right',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Github Blog',
     description:
       'A 2-page website that showcases all repositories of a GitHub user, providing detailed information about each repository.',
@@ -40,7 +48,7 @@ export const projectsResumeEN = [
     position: 'left',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Art Galleria Slideshow',
     description:
       'Project build with ReactJS with slideshow presentation, masonry layout and lightbox view.',
@@ -48,7 +56,7 @@ export const projectsResumeEN = [
     position: 'right',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Planets Fact Site',
     description:
       'An 8-page fact site for all planets in our solar system, build with ReactJS.',
@@ -56,7 +64,7 @@ export const projectsResumeEN = [
     position: 'left',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Coffee Delivery',
     description:
       'Aplication build with React.js, with a shopping cart for a fictional coffee shop.',
@@ -64,7 +72,7 @@ export const projectsResumeEN = [
     position: 'right',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Devfinder',
     description:
       'Project built with React JS, using GitHub API user, that lets you search for a Github user by their name.',
@@ -72,7 +80,7 @@ export const projectsResumeEN = [
     position: 'left',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Coffee Roasters',
     description:
       '3-page site for a fictional coffee shop, build with Vanilla JavaScript, with an interactive subscription section.',
@@ -80,7 +88,7 @@ export const projectsResumeEN = [
     position: 'right',
   },
   {
-    id: 10,
+    id: 11,
     title: 'Dictionary',
     description:
       'A Dictionary App built with React.js, using the Dictionary API and including colour themes and font selection.',
