@@ -81,7 +81,7 @@ export const projectsDetailsEN = [
     summary:
       'This is my first personal full-stack project, consisting of an application that simulates a small-scale social network. It allows users to register directly within the application or access it as a guest. The application includes a page for creating, reading, updating, and deleting posts and comments, as well as a profile editing section for logged-in users, and a create user for visitors.',
     details:
-      'For this project, I used a Next.js database, using Prisma and MySQL. This allowed me to create a backend alongside my frontend application, enabling data persistence and handling requests by creating routes and endpoints within Next.js for connecting to the database. One of my most significant learning experiences in this project was building API routes for interacting with the database.',
+      'For this project, I utilized a Next.js database, using Prisma and MySQL. This allowed me to create a backend alongside my frontend application, enabling data persistence and request management by establishing routes and endpoints within Next.js for database connectivity. One of the most significant learning experiences in this project was building API routes to interact with the database, as well as utilizing the getServerSideProps function to render server-side information, resulting in fewer client-side requests.',
     tools: [
       'Typescript',
       'Next.Js',
