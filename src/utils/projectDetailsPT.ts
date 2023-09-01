@@ -68,40 +68,6 @@ export const projectsDetailsPT = [
   },
   {
     id: 2,
-    title: 'Blogger',
-    images: [
-      {
-        first: '/assets/projects/blogger/img_1.png',
-        second: '/assets/projects/blogger/img_2.png',
-        third: '/assets/projects/blogger/img_3.png',
-      },
-    ],
-    categories: ['Interaction Design', 'FullStack Development'],
-    languages: ['TypeScript', 'Next.Js', 'Prisma'],
-    summary:
-      'Este é o meu primeiro projeto pessoal full-stack, consistindo em uma aplicação que simula uma rede social em pequena escala. Ela permite que os usuários se registrem diretamente dentro da aplicação ou acessem como convidados. A aplicação inclui uma página para criar, ler, atualizar e excluir postagens e comentários, assim como uma seção de edição de perfil para usuários logados e uma página de criação de usuário para visitantes.',
-    details:
-      'Para este projeto, eu utilizei um banco de dados Next.js, usando o Prisma e o MySQL. Isso me permitiu criar um backend junto com minha aplicação frontend, possibilitando a persistência de dados e o gerenciamento de requisições através da criação de rotas e endpoints dentro do Next.js para conexão com o banco de dados. Uma das experiências de aprendizado mais significativas neste projeto foi construir rotas de API para interagir com o banco de dados, além de utilizar a função getServerSideProps para renderizar informações do lado do servidor, possibilitando menos requisições na camada do cliente.',
-    tools: [
-      'Typescript',
-      'Next.Js',
-      'React.js',
-      'Prisma',
-      'Stitches',
-      'axios',
-      'font-awesome',
-      'zod',
-      'react-hook-form',
-      'phosphor-react',
-      'radix-ui',
-      'react-toastify',
-      'ESLint',
-      'Prettier',
-    ],
-    preview: 'https://maricastroc-myblog.vercel.app/',
-  },
-  {
-    id: 3,
     title: 'Atomic Shop',
     images: [
       {
@@ -134,7 +100,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-atomic-shop.netlify.app/',
   },
   {
-    id: 4,
+    id: 3,
     title: 'Comments Section',
     images: [
       {
@@ -162,7 +128,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-interactive-post-comments.netlify.app/',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Github Blog',
     images: [
       {
@@ -191,7 +157,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-github-blog.netlify.app/',
   },
   {
-    id: 6,
+    id: 5,
     title: 'Art Galleria',
     images: [
       {
@@ -217,7 +183,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-galleria-slideshow.netlify.app/',
   },
   {
-    id: 7,
+    id: 6,
     title: 'Planets Fact',
     images: [
       {
@@ -245,7 +211,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-planets-fact-site.netlify.app/',
   },
   {
-    id: 8,
+    id: 7,
     title: 'Coffee Delivery',
     images: [
       {
@@ -275,7 +241,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-coffee-delivery.netlify.app/',
   },
   {
-    id: 9,
+    id: 8,
     title: 'Devfinder',
     images: [
       {
@@ -302,7 +268,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-search-github-user.netlify.app/',
   },
   {
-    id: 10,
+    id: 9,
     title: 'Coffee Roasters',
     images: [
       {
@@ -328,7 +294,7 @@ export const projectsDetailsPT = [
     preview: 'https://maricastroc-coffeeroasters-page.netlify.app/',
   },
   {
-    id: 11,
+    id: 10,
     title: 'Dictionary',
     images: [
       {
